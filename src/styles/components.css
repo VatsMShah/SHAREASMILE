@@ -1,0 +1,84 @@
+/* ==========================================================================
+   BUTTONS: Poppins Medium 500
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 11px 25px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-btn);
+  font-weight: 500;
+  font-size: 0.88rem;
+  border: 1.5px solid var(--maroon);
+  cursor: pointer;
+  transition: all 0.22s ease;
+  white-space: nowrap;
+}
+
+.btn.sm {
+  padding: 7px 18px;
+  font-size: 0.82rem;
+}
+
+.btn.solid {
+  background: var(--maroon);
+  color: #fff;
+  border-color: var(--maroon);
+}
+
+.btn.solid:hover {
+  background: var(--maroon-d);
+  border-color: var(--maroon-d);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(139, 26, 26, 0.24);
+}
+
+.btn.ghost {
+  color: var(--maroon);
+  background: transparent;
+  border-color: var(--maroon);
+}
+
+.btn.ghost:hover {
+  background: var(--maroon);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.btn-action-white {
+  background: #fff;
+  color: var(--maroon);
+  border-color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-action-white:hover {
+  background: #fbf5ea;
+  border-color: #fbf5ea;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-action-outline {
+  background: transparent;
+  color: #fff;
+  border-color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-action-outline:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
+}
+
+.btn-heart {
+  font-size: 1rem;
+  line-height: 1;
+}
+

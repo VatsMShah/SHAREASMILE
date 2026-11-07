@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --maroon: #8b1a1a;
+  --maroon-d: #6b0c0d;
+  --maroon-darker: #59090a;
+  --gold: #b8802f;
+  --gold-light: #f0c98a;
+  --cream: #fbf5ea;
+  --cream2: #f6ecdb;
+  --peach-hero: #f7ebd9;
+  --ink: #3a2a26;
+  --mut: #6d5f58;
+
+  /* Typography Mapping from Design Specs */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-body: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-nav: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-btn: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-label: 'Montserrat', sans-serif;
+  --font-script: 'Allura', cursive;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 18px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+

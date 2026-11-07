@@ -1,0 +1,63 @@
+/* Headings: Playfair Display Bold 700 */
+h1 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: var(--maroon);
+  line-height: 1.15;
+  font-size: clamp(2.3rem, 4vw, 3.4rem);
+}
+
+h2 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: var(--maroon);
+  line-height: 1.2;
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Card headings: Playfair Display SemiBold 600 */
+h3 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: var(--maroon);
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+h4 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: var(--maroon);
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Body paragraphs: Poppins Regular 400 */
+p {
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+/* Section Tags / Eyebrows: Montserrat Bold 700 (matching reference thickness) */
+.eyebrow {
+  display: block;
+  font-family: var(--font-label);
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.2em;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  margin-bottom: 0.55rem;
+}
+
+/* Decorative quotes: Allura Regular 400 */
+.script {
+  font-family: var(--font-script);
+  font-weight: 400;
+  color: var(--maroon);
+  line-height: 1.2;
+}
+

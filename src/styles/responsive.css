@@ -1,0 +1,319 @@
+/* ==========================================================================
+   RESPONSIVENESS (1440px, 768px, 390px)
+   ========================================================================== */
+
+/* Tablet (< 960px) */
+@media (max-width: 960px) {
+  .hdr-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+  }
+
+  .logo {
+    height: 44px;
+  }
+
+  .hdr-desktop-donate {
+    display: none;
+  }
+
+  .hdr-mobile-donate {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .hdr-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: var(--cream);
+    flex-direction: column;
+    align-items: stretch;
+    justify-self: stretch;
+    padding: 20px 24px 28px;
+    gap: 14px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(184, 128, 47, 0.15);
+  }
+
+  .hdr-nav.open {
+    display: flex;
+  }
+
+  .hdr-nav > a,
+  .dd-toggle {
+    font-size: 1rem;
+    padding: 7px 0;
+  }
+
+  .dd-m {
+    position: static;
+    box-shadow: none;
+    background: transparent;
+    padding: 4px 0 4px 14px;
+    display: block;
+    border: none;
+  }
+
+  .btn-donate {
+    margin-left: 0;
+    margin-top: 6px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero {
+    min-height: 480px;
+  }
+
+  .hero-txt {
+    padding: 44px 0 60px;
+    max-width: 100%;
+  }
+
+  .hero-fade {
+    background: linear-gradient(
+      180deg,
+      rgba(247, 235, 217, 0.96) 0%,
+      rgba(247, 235, 217, 0.85) 55%,
+      rgba(247, 235, 217, 0.45) 100%
+    );
+  }
+
+  .hero-sc {
+    display: none;
+  }
+
+  .dots {
+    left: 50%;
+    bottom: 35px;
+  }
+
+  .impact-section {
+    margin-top: 0;
+  }
+
+  .impact {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 24px 20px 32px;
+  }
+
+  .impact-head {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 8px;
+    padding-right: 0;
+  }
+
+  .impact-gold-bar {
+    margin: 10px auto 0;
+  }
+
+  .stat {
+    border-left: none;
+    border-top: 1px solid rgba(184, 128, 47, 0.2);
+    padding-top: 14px;
+  }
+
+  .grid4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-band {
+    padding: 44px 0;
+  }
+
+  .ab-wrap {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    text-align: center;
+  }
+
+  .ab-content p {
+    margin: 12px auto 20px;
+  }
+
+  .ab-img-wrap {
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .stories-section {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 44px 20px;
+  }
+
+  .stories-intro {
+    grid-column: 1 / -1;
+  }
+
+  .action-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 28px;
+    gap: 20px;
+  }
+
+  .action-bg-photo {
+    width: 100%;
+    opacity: 0.28;
+  }
+
+  .trust-section {
+    padding: 44px 20px;
+  }
+
+  .ftr-g {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+
+  .grid3 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .split {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile (< 580px, e.g. 390px iPhone) */
+@media (max-width: 580px) {
+  .wrap {
+    padding: 0 18px;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .hdr-container {
+    padding: 8px 16px;
+  }
+
+  .hero-content {
+    padding: 0 16px;
+  }
+
+  .hero-txt {
+    padding: 36px 0 54px;
+  }
+
+  .hero-txt h1 {
+    font-size: 2rem;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-btns .btn {
+    width: 100%;
+  }
+
+  .arr {
+    width: 34px;
+    height: 34px;
+  }
+
+  .arr svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .arr.l {
+    left: 6px;
+  }
+
+  .arr.r {
+    right: 6px;
+  }
+
+  .dots {
+    bottom: 25px;
+  }
+
+  .impact-section {
+    margin-top: 0;
+  }
+
+  .impact {
+    grid-template-columns: 1fr;
+    padding: 20px 16px 28px;
+  }
+
+  .grid4,
+  .stories-section,
+  .grid3,
+  .grid2,
+  .gal {
+    grid-template-columns: 1fr;
+  }
+
+  .about-band {
+    padding: 36px 0;
+  }
+
+  .action-banner {
+    padding: 38px 0;
+  }
+
+  .action-wrap {
+    padding: 0 16px;
+  }
+
+  .action-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .action-btns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .action-btns .btn {
+    width: 100%;
+  }
+
+  .trust-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 16px;
+    gap: 28px;
+  }
+
+  .trust-badges {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .ftr-wrap {
+    padding: 0 16px;
+  }
+
+  .ftr-g {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .ftr-copy {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+

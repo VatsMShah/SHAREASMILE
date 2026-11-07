@@ -1,0 +1,221 @@
+/* ==========================================================================
+   HEADER: Poppins Medium 500 for navigation
+   ========================================================================== */
+.hdr {
+  background: var(--cream);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(184, 128, 47, 0.12);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.hdr-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 12px 32px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.hdr-left {
+  justify-self: start;
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.hdr-nav {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-family: var(--font-nav);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.hdr-right {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hdr-desktop-donate {
+  display: inline-flex;
+}
+
+.hdr-mobile-donate {
+  display: none;
+}
+
+.hdr-nav > a,
+.dd-toggle {
+  color: var(--ink);
+  padding: 5px 0;
+  position: relative;
+  font-family: var(--font-nav);
+  font-size: 0.95rem;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.hdr-nav > a::after,
+.dd-toggle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--maroon);
+  transition: width 0.2s ease;
+}
+
+.hdr-nav > a:hover,
+.dd-toggle:hover {
+  color: var(--maroon);
+}
+
+.hdr-nav > a:hover::after,
+.hdr-nav > a.active::after {
+  width: 100%;
+}
+
+.hdr-nav > a.active {
+  color: var(--maroon);
+  font-weight: 600;
+}
+
+/* Donate Button in Header: Clean solid pill, crisp white text on maroon, crystal clear hover */
+.btn-donate {
+  padding: 9px 24px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  font-family: var(--font-btn);
+  background: var(--maroon);
+  color: #fff !important;
+  border: 1.5px solid var(--maroon);
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.22s ease;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-donate::after {
+  display: none !important;
+}
+
+.btn-donate:hover,
+.btn-donate:focus {
+  background: #731515 !important;
+  border-color: #731515 !important;
+  color: #fff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(139, 26, 26, 0.28);
+}
+
+/* Dropdown */
+.dd {
+  position: relative;
+}
+
+.caret {
+  font-size: 0.75rem;
+  color: var(--mut);
+  transition: transform 0.2s ease;
+}
+
+.dd-m {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -12px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-sm);
+  padding: 8px;
+  min-width: 220px;
+  z-index: 100;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dd:hover .dd-m,
+.dd.dd-active .dd-m {
+  display: block;
+}
+
+.dd-m a {
+  display: block;
+  padding: 10px 14px;
+  border-radius: 6px;
+  color: var(--ink);
+  font-family: var(--font-nav);
+  font-size: 0.92rem;
+  font-weight: 500;
+  transition: background 0.15s ease, color 0.15s ease;
+  text-decoration: none;
+}
+
+.dd-m a:hover {
+  background: var(--cream2);
+  color: var(--maroon);
+}
+
+/* Burger Menu Toggle */
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 1001;
+}
+
+.burger span {
+  display: block;
+  width: 24px;
+  height: 2.2px;
+  background: var(--maroon);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.burger.open span:nth-child(1) {
+  transform: translateY(7.2px) rotate(45deg);
+}
+
+.burger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open span:nth-child(3) {
+  transform: translateY(-7.2px) rotate(-45deg);
+}
+
