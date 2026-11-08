@@ -60,3 +60,4 @@ export default function StoriesSectionV2() {
     </section>
   );
 }
+

@@ -169,3 +169,4 @@ export default function ImpactRibbonV2() {
     </section>
   );
 }
+

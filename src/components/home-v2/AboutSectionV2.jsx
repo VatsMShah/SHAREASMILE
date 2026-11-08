@@ -55,3 +55,4 @@ export default function AboutSectionV2() {
     </section>
   );
 }
+

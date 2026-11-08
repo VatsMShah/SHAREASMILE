@@ -95,3 +95,4 @@ export default function PillarsSectionV2() {
     </section>
   );
 }
+
