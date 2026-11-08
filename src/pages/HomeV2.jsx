@@ -4,7 +4,7 @@ import PillarsSectionV2 from '@/components/home-v2/PillarsSectionV2';
 import ImpactRibbonV2 from '@/components/home-v2/ImpactRibbonV2';
 import StoriesSectionV2 from '@/components/home-v2/StoriesSectionV2';
 import TrustSectionV2 from '@/components/home-v2/TrustSectionV2';
-import MiniContactSection from '@/components/home-v2/MiniContactSection';
+import ActionBannerV2 from '@/components/home-v2/ActionBannerV2';
 
 export default function HomeV2() {
   return (
@@ -27,8 +27,8 @@ export default function HomeV2() {
       {/* 6. Trust & Transparency: 501(c)(3) & Official Badges */}
       <TrustSectionV2 />
 
-      {/* 7. Contact Mini Form: Direct Touchpoint with Slow-Mo Background */}
-      <MiniContactSection />
+      {/* 7. Action Banner: Compact Call-to-Action with Cool Background Image */}
+      <ActionBannerV2 />
     </div>
   );
 }
