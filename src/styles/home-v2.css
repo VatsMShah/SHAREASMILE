@@ -648,69 +648,99 @@
 
 /* ==========================================================================
    ACTION BANNER V2
-   Compact, high-converting call-to-action banner with only ONE button:
-   [Donate Now]. Features a warm sand non-camouflaging background tone
-   with a cool authentic image and radiant contrast against the maroon footer.
+   Contained, floating call-to-action card centered with only ONE button:
+   [Donate Now]. Distinct from the left-heavy Hero section, with an
+   authentic background image and zero camouflage against the maroon footer.
    ========================================================================== */
 .action-banner-v2 {
-  background-color: #ebdcc6;
-  background-image: linear-gradient(135deg, #f0e3ce 0%, #ebdcc6 50%, #e2cdb0 100%);
-  color: var(--charcoal);
+  background-color: var(--ivory);
+  padding: 40px 0 65px;
+  position: relative;
+}
+
+.action-v2-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.action-v2-card {
   position: relative;
   overflow: hidden;
-  padding: 56px 0;
-  border-bottom: 2px solid rgba(184, 128, 47, 0.28);
+  border-radius: 24px;
+  background-color: #4a1012;
+  border: 1.5px solid rgba(184, 128, 47, 0.35);
+  box-shadow: 0 20px 48px -12px rgba(28, 14, 12, 0.32), 0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+  padding: 56px 36px;
+  text-align: center;
+  color: #ffffff;
 }
 
-.action-v2-bg-photo {
+.action-v2-card-bg {
   position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 58%;
-  max-width: 920px;
+  inset: 0;
   background-size: cover;
-  background-position: center right;
-  pointer-events: none;
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    rgba(0, 0, 0, 0.15) 14%,
-    rgba(0, 0, 0, 0.6) 32%,
-    #000 60%
-  );
-  mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    rgba(0, 0, 0, 0.15) 14%,
-    rgba(0, 0, 0, 0.6) 32%,
-    #000 60%
-  );
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.45;
+  will-change: transform;
+  animation: slowMoDrift 24s ease-in-out infinite alternate;
+  z-index: 0;
 }
 
-.action-v2-wrap {
+@keyframes slowMoDrift {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .action-v2-card-bg {
+    animation: none;
+    transform: scale(1.03);
+  }
+}
+
+.action-v2-card-scrim {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(40, 14, 16, 0.6) 0%,
+    rgba(22, 8, 9, 0.9) 100%
+  );
+  z-index: 1;
+}
+
+.action-v2-card-content {
   position: relative;
   z-index: 2;
-  display: flex;
-  align-items: center;
-  max-width: 1180px;
+  max-width: 680px;
   margin: 0 auto;
-  padding: 0 32px;
-}
-
-.action-v2-content {
-  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .action-v2-eyebrow {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-family: var(--font-label);
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 700;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #9f6b23;
-  margin-bottom: 8px;
+  color: #e5b96a;
+  margin-bottom: 12px;
+}
+
+.action-v2-sparkle {
+  font-size: 0.65rem;
+  color: #e5b96a;
 }
 
 .action-v2-heading {
@@ -718,8 +748,8 @@
   font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.25;
-  color: var(--maroon);
-  margin-bottom: 12px;
+  color: #ffffff;
+  margin-bottom: 14px;
   letter-spacing: -0.01em;
 }
 
@@ -727,74 +757,80 @@
   font-family: var(--font-body);
   font-size: 1.05rem;
   line-height: 1.62;
-  color: #42322d;
-  margin-bottom: 24px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 26px;
+  max-width: 580px;
 }
 
-.action-v2-btns {
+.action-v2-btn-wrap {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
 }
 
 .btn-action-v2-donate {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: var(--maroon);
-  color: #ffffff !important;
-  padding: 13px 32px;
+  background: #ffffff;
+  color: var(--maroon) !important;
+  padding: 14px 38px;
   border-radius: 999px;
   font-family: var(--font-label);
-  font-size: 0.96rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 700;
   letter-spacing: 0.03em;
-  box-shadow: 0 6px 18px rgba(124, 15, 16, 0.28);
-  transition: all 0.25s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
 }
 
 .btn-action-v2-donate:hover {
-  background: #941315;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(124, 15, 16, 0.38);
+  background: #fdfaf4;
+  color: #941315 !important;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
 }
 
 .action-v2-btn-svg {
-  width: 17px;
-  height: 17px;
-  stroke: currentColor;
+  width: 18px;
+  height: 18px;
+  stroke: var(--maroon);
   fill: none;
+  transition: transform 0.25s ease;
+}
+
+.btn-action-v2-donate:hover .action-v2-btn-svg {
+  transform: scale(1.15);
+}
+
+.action-v2-tax-note {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-label);
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.72);
+  margin: 0;
+}
+
+.action-v2-bullet {
+  color: #e5b96a;
 }
 
 /* Responsive Rules for Action Banner V2 */
-@media (max-width: 992px) {
-  .action-banner-v2 {
-    padding: 48px 0;
-  }
-
-  .action-v2-content {
-    max-width: 480px;
-  }
-
-  .action-v2-heading {
-    font-size: 1.95rem;
-  }
-}
-
 @media (max-width: 768px) {
   .action-banner-v2 {
-    padding: 44px 0 50px;
+    padding: 30px 0 50px;
   }
 
-  .action-v2-bg-photo {
-    width: 100%;
-    opacity: 0.22;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 30%, #000 100%);
-    mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 30%, #000 100%);
+  .action-v2-container {
+    padding: 0 16px;
   }
 
-  .action-v2-content {
-    max-width: 100%;
+  .action-v2-card {
+    padding: 42px 20px;
+    border-radius: 18px;
   }
 
   .action-v2-heading {
@@ -803,7 +839,17 @@
 
   .action-v2-desc {
     font-size: 0.98rem;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+  }
+
+  .action-v2-tax-note {
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.76rem;
+  }
+
+  .action-v2-bullet {
+    display: none;
   }
 }
 
