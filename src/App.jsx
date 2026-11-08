@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Home from './pages/Home';
+import HomeV2 from './pages/HomeV2';
 import Education from './pages/Education';
 import Healthcare from './pages/Healthcare';
 import Poverty from './pages/Poverty';
@@ -18,6 +19,8 @@ export default function App() {
       <main id="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/new-home" element={<HomeV2 />} />
+          <Route path="/home-v2" element={<HomeV2 />} />
           <Route path="/education" element={<Education />} />
           <Route path="/healthcare" element={<Healthcare />} />
           <Route path="/poverty-enrichment" element={<Poverty />} />

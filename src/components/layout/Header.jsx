@@ -32,6 +32,9 @@ export default function Header() {
           <NavLink to="/" end className={({ isActive }) => (isActive ? 'active' : '')}>
             Home
           </NavLink>
+          <NavLink to="/new-home" className={({ isActive }) => (isActive ? 'active' : '')}>
+            New Home <span className="nav-pill-badge">v2</span>
+          </NavLink>
 
           <div
             className={`dd ${dropdownOpen ? 'dd-active' : ''}`}
