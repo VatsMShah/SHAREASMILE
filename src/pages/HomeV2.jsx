@@ -3,8 +3,8 @@ import AboutSectionV2 from '@/components/home-v2/AboutSectionV2';
 import PillarsSectionV2 from '@/components/home-v2/PillarsSectionV2';
 import ImpactRibbonV2 from '@/components/home-v2/ImpactRibbonV2';
 import StoriesSectionV2 from '@/components/home-v2/StoriesSectionV2';
-import TrustSectionV2 from '@/components/home-v2/TrustSectionV2';
-import ActionBannerV2 from '@/components/home-v2/ActionBannerV2';
+import ActionBanner from '@/components/home/ActionBanner';
+import TransparencyBadges from '@/components/home/TransparencyBadges';
 
 export default function HomeV2() {
   return (
@@ -24,11 +24,11 @@ export default function HomeV2() {
       {/* 5. Stories of Hope: Human Transformation */}
       <StoriesSectionV2 />
 
-      {/* 6. Trust & Transparency: 501(c)(3) & Official Badges */}
-      <TrustSectionV2 />
+      {/* 6. Take Action Banner: Authentic Hearts with Donate & Volunteer */}
+      <ActionBanner />
 
-      {/* 7. Action Banner: Compact Call-to-Action with Cool Background Image */}
-      <ActionBannerV2 />
+      {/* 7. Trust & Transparency: 501(c)(3) Badges & Governance */}
+      <TransparencyBadges />
     </div>
   );
 }
