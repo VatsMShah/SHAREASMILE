@@ -32,8 +32,8 @@ export default function Header() {
           <NavLink to="/" end className={({ isActive }) => (isActive ? 'active' : '')}>
             Home
           </NavLink>
-          <NavLink to="/new-home" className={({ isActive }) => (isActive ? 'active' : '')}>
-            New Home <span className="nav-pill-badge">v2</span>
+          <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>
+            About Us
           </NavLink>
 
           <div
@@ -64,14 +64,8 @@ export default function Header() {
             </div>
           </div>
 
-          <NavLink to="/events" className={({ isActive }) => (isActive ? 'active' : '')}>
-            Events
-          </NavLink>
-          <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>
-            About Us
-          </NavLink>
           <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>
-            Contact
+            Contact Us
           </NavLink>
 
           {/* Mobile drawer donate button */}

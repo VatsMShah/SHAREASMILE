@@ -1,80 +1,73 @@
 export default function AboutMission() {
-  const values = [
-    {
-      title: 'Dignity First',
-      desc: 'We treat every beneficiary as an equal partner, uplifting human potential rather than offering mere handouts.'
-    },
-    {
-      title: 'Grassroots Proximity',
-      desc: 'We partner directly with schools and local clinic leaders embedded deep in rural villages who understand real local needs.'
-    },
-    {
-      title: 'Radical Transparency',
-      desc: 'As a Candid Platinum nonprofit, every donation is accounted for with complete financial integrity and open reporting.'
-    },
-    {
-      title: 'Sustainable Impact',
-      desc: 'We focus on long-term systemic uplift through education and skills rather than temporary, short-lived relief.'
-    }
-  ];
-
   return (
-    <section className="about-mission-section" aria-labelledby="about-mission-title">
+    <section className="about-mission-section" aria-labelledby="mission-vision-title">
       <div className="wrap about-mission-wrap">
         <div className="about-mission-header">
-          <span className="about-section-eyebrow">WHAT DRIVES US</span>
-          <h2 id="about-mission-title" className="about-section-title">
-            Our Mission, Vision & Core Values
+          <span className="about-section-eyebrow">
+            <span className="eyebrow-sparkle" aria-hidden="true">✦</span>
+            GUIDING PRINCIPLES
+            <span className="eyebrow-sparkle" aria-hidden="true">✦</span>
+          </span>
+          <h2 id="mission-vision-title" className="about-section-title">
+            Our Mission & Our Vision
           </h2>
           <p className="about-section-subtitle">
-            Every grant we distribute and every school we support is rooted in these enduring principles.
+            The enduring foundation guiding every initiative, partnership, and grant we undertake.
           </p>
         </div>
 
-        <div className="about-mission-grid">
-          {/* Card 1: Mission */}
-          <div className="about-card-pillar">
-            <div className="pillar-header">
-              <span className="pillar-num">01</span>
-              <h3>Our Mission</h3>
+        <div className="about-mv-grid">
+          {/* Card 1: Our Mission */}
+          <div className="about-mv-card mission-card">
+            <div className="mv-card-top">
+              <div className="mv-icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              </div>
+              <span className="mv-card-num">01</span>
             </div>
-            <p>
-              To eliminate the systemic barriers of isolation, poverty, and illiteracy by educating underprivileged children, funding rural medical camps, and empowering women with vocational dignity.
+
+            <h3 className="mv-card-title">Our Mission</h3>
+
+            <p className="mv-card-text">
+              To improve the quality of life of underprivileged communities by supporting impactful initiatives in education, healthcare, poverty alleviation, and women empowerment.
             </p>
-            <div className="pillar-footer">
-              <span className="pillar-pill">Direct Grant-Making Model</span>
+
+            <p className="mv-card-text secondary">
+              We aim to create opportunities, remove barriers, and empower individuals to build a more secure and independent future.
+            </p>
+
+            <div className="mv-card-tag">
+              <span>Impact-Driven Action</span>
             </div>
           </div>
 
-          {/* Card 2: Vision */}
-          <div className="about-card-pillar">
-            <div className="pillar-header">
-              <span className="pillar-num">02</span>
-              <h3>Our Vision</h3>
+          {/* Card 2: Our Vision */}
+          <div className="about-mv-card vision-card">
+            <div className="mv-card-top">
+              <div className="mv-icon-badge vision">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </div>
+              <span className="mv-card-num">02</span>
             </div>
-            <p>
-              A future where birth location and economic status never restrict a child’s potential, where preventable illness is treated promptly, and where women stand as independent pillars of their communities.
-            </p>
-            <div className="pillar-footer">
-              <span className="pillar-pill">Generational Transformation</span>
-            </div>
-          </div>
 
-          {/* Card 3: Values */}
-          <div className="about-card-pillar values-card">
-            <div className="pillar-header">
-              <span className="pillar-num">03</span>
-              <h3>Core Principles</h3>
-            </div>
-            <div className="pillar-values-list">
-              {values.map((v) => (
-                <div key={v.title} className="pillar-value-item">
-                  <span className="value-bullet">✦</span>
-                  <div>
-                    <strong>{v.title}:</strong> <span>{v.desc}</span>
-                  </div>
-                </div>
-              ))}
+            <h3 className="mv-card-title">Our Vision</h3>
+
+            <p className="mv-card-text">
+              A world where every individual, regardless of their background or circumstances, has equal access to opportunities, essential resources, and the freedom to shape their future.
+            </p>
+
+            <p className="mv-card-text secondary">
+              We envision empowered communities where education creates possibilities, healthcare protects lives, and individuals have the resources and confidence to become self-reliant.
+            </p>
+
+            <div className="mv-card-tag vision">
+              <span>Generational Self-Reliance</span>
             </div>
           </div>
         </div>

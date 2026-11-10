@@ -1,38 +1,46 @@
 import AboutHero from '@/components/about/AboutHero';
-import AboutStory from '@/components/about/AboutStory';
+import AboutOpportunity from '@/components/about/AboutOpportunity';
+import AboutWhoWeAre from '@/components/about/AboutWhoWeAre';
 import AboutVideo from '@/components/about/AboutVideo';
 import AboutMission from '@/components/about/AboutMission';
-import AboutTimeline from '@/components/about/AboutTimeline';
+import PillarsSectionV2 from '@/components/home-v2/PillarsSectionV2';
+import AboutApproach from '@/components/about/AboutApproach';
 import AboutLeadership from '@/components/about/AboutLeadership';
-import AboutTransparency from '@/components/about/AboutTransparency';
 import ActionBanner from '@/components/home/ActionBanner';
+import AboutTransparency from '@/components/about/AboutTransparency';
 
 export default function About() {
   return (
     <div className="about-page">
-      {/* 1. Hero Header: Emotional Purpose & 501(c)(3) Badges */}
+      {/* 1. Standard Inner Hero Header (Compact, Breadcrumb, Title, Tagline, Background Image) */}
       <AboutHero />
 
-      {/* 2. Origin Story: NJ Roots & "Why We Exist" */}
-      <AboutStory />
+      {/* 2. Core Purpose & Overlapping Photo Collage: Every Smile Begins With an Opportunity */}
+      <AboutOpportunity />
 
-      {/* 3. Cinema Spotlight: "See the Smiles, Feel the Impact" (YouTube Ready) */}
+      {/* 3. Who We Are: A Mission Rooted in Compassion */}
+      <AboutWhoWeAre />
+
+      {/* 4. Cinema Spotlight: Official Widescreen YouTube Video */}
       <AboutVideo />
 
-      {/* 4. Mission, Vision & Core Values */}
+      {/* 5. Our Mission & Our Vision: Dual Balanced Cards */}
       <AboutMission />
 
-      {/* 5. Journey & Milestones: Interactive Timeline */}
-      <AboutTimeline />
+      {/* 6. Four Pillars of Change: Identical to Home Page Four Pillars Section */}
+      <PillarsSectionV2 />
 
-      {/* 6. Leadership & Governance: Trustees & Advisors Profile Cards */}
+      {/* 7. Our Approach: 3 Core Principles for Sustainable Impact */}
+      <AboutApproach />
+
+      {/* 8. The People Behind Our Mission: Board of Trustees & Board of Advisors */}
       <AboutLeadership />
 
-      {/* 7. Financial Integrity & Stewardship Band */}
-      <AboutTransparency />
-
-      {/* 8. Take Action Banner: Authentic Hearts with Donate & Volunteer */}
+      {/* 9. Take Action Banner (Identical to Home Page: Be the Reason for a Smile, Donate & Volunteer) */}
       <ActionBanner />
+
+      {/* 10. Our Commitment to Transparency: Official 501(c)(3), EIN & Candid Badges on Warm Ivory */}
+      <AboutTransparency />
     </div>
   );
 }

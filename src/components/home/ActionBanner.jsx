@@ -19,13 +19,6 @@ export default function ActionBanner() {
               </svg>
               Donate Now
             </Link>
-            <Link to="/contact" className="btn btn-action-outline">
-              <svg viewBox="0 0 24 24" className="action-btn-svg" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                <circle cx="12" cy="7" r="4" />
-              </svg>
-              Volunteer
-            </Link>
           </div>
         </div>
       </div>
