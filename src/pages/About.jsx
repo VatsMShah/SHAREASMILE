@@ -1,7 +1,6 @@
 import AboutHero from '@/components/about/AboutHero';
 import AboutOpportunity from '@/components/about/AboutOpportunity';
 import AboutWhoWeAre from '@/components/about/AboutWhoWeAre';
-import AboutVideo from '@/components/about/AboutVideo';
 import AboutMission from '@/components/about/AboutMission';
 import PillarsSectionV2 from '@/components/home-v2/PillarsSectionV2';
 import AboutApproach from '@/components/about/AboutApproach';
@@ -21,10 +20,7 @@ export default function About() {
       {/* 3. Who We Are: A Mission Rooted in Compassion */}
       <AboutWhoWeAre />
 
-      {/* 4. Cinema Spotlight: Official Widescreen YouTube Video */}
-      <AboutVideo />
-
-      {/* 5. Our Mission & Our Vision: Dual Balanced Cards */}
+      {/* 4. Our Mission & Our Vision: Dual Balanced Cards */}
       <AboutMission />
 
       {/* 6. Four Pillars of Change: Identical to Home Page Four Pillars Section */}

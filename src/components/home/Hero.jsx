@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { SLIDES, IMG } from '@/data';
+import { SLIDES, IMG, DONATION_URL } from '@/data';
 
 export default function Hero() {
   const [current, setCurrent] = useState(0);
@@ -71,9 +71,14 @@ export default function Hero() {
           </p>
 
           <div className="hero-btns row">
-            <Link to="/contact" className="btn solid">
+            <a
+              href={DONATION_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn solid"
+            >
               <span className="btn-heart">♡</span> Donate Now
-            </Link>
+            </a>
             <a href="#pillars" className="btn ghost">
               Explore Our Initiatives <span className="btn-arrow">→</span>
             </a>

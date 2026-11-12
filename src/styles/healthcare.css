@@ -1,0 +1,536 @@
+/* ==========================================================================
+   MEDICAL & HEALTHCARE PAGE STYLESHEET
+   Harmonized with Design System: Warm Ivory (#fdfaf4), Soft Cream (#fbf6ee),
+   Warm Sand (#f3e8d6), Deep Maroon (#8b1a1a / #7c0f10), Warm Gold (#b8802f)
+   ========================================================================== */
+
+.healthcare-page {
+  background-color: #fbf6ee;
+  color: var(--ink);
+}
+
+.healthcare-page .inner-hero-bg-photo.healthcare-hero-photo {
+  left: auto;
+  right: 0;
+  width: 58%;
+  background-position: 72% 30%;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.85) 28%, #000 52%);
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.85) 28%, #000 52%);
+}
+
+/* ==========================================================================
+   1. OVERVIEW & 18 YEARS OUTREACH (Soft Cream #fbf6ee)
+   ========================================================================== */
+.health-overview-section {
+  background-color: #fbf6ee;
+  padding: 76px 0 88px;
+}
+
+.health-overview-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.health-overview-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.health-showcase-card {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  min-height: 420px;
+  padding: 14px;
+}
+
+.health-showcase-main {
+  position: relative;
+  z-index: 1;
+  width: 84%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(68, 22, 16, 0.14);
+  border: 4px solid #fdfaf4;
+}
+
+.health-showcase-main img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: center 25%;
+  display: block;
+}
+
+.health-showcase-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 14px;
+  background: linear-gradient(to top, rgba(20, 10, 8, 0.85) 0%, transparent 100%);
+  color: #fdfaf4;
+  font-family: var(--font-label);
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.health-showcase-sub {
+  position: absolute;
+  bottom: 10px;
+  right: 12px;
+  z-index: 2;
+  width: 52%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.22);
+  border: 4px solid #fdfaf4;
+  background: #fdfaf4;
+}
+
+.health-showcase-sub img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
+}
+
+.health-showcase-badge {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  z-index: 3;
+  background: linear-gradient(135deg, #7c0f10 0%, #441610 100%);
+  color: #fdfaf4;
+  padding: 10px 16px;
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(68, 22, 16, 0.28);
+  border: 1px solid rgba(240, 201, 138, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.health-showcase-badge .badge-tag {
+  font-family: var(--font-label);
+  font-size: 0.65rem;
+  color: #f0c98a;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+.health-showcase-badge strong {
+  font-family: var(--font-title);
+  font-size: 0.95rem;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.health-showcase-badge .badge-sub {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ==========================================================================
+   2. CLINICAL SERVICES GRID (Warm Ivory #fdfaf4)
+   ========================================================================== */
+.health-services-section {
+  background-color: #fdfaf4;
+  padding: 80px 0;
+  border-top: 1px solid rgba(184, 128, 47, 0.2);
+}
+
+.health-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.health-service-card {
+  background: #fbf6ee;
+  border: 1px solid rgba(184, 128, 47, 0.28);
+  border-radius: 16px;
+  padding: 24px 20px;
+  transition: transform 0.26s ease, box-shadow 0.26s ease, border-color 0.26s ease;
+}
+
+.health-service-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(184, 128, 47, 0.65);
+  box-shadow: 0 12px 28px rgba(90, 28, 20, 0.08);
+}
+
+.health-service-top {
+  margin-bottom: 16px;
+}
+
+.health-service-title {
+  font-family: var(--font-serif);
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--maroon);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.health-service-desc {
+  font-size: 0.87rem;
+  line-height: 1.6;
+  color: var(--mut);
+}
+
+/* ==========================================================================
+   3. JOURNEY OF A VILLAGE (Warm Sand #f3e8d6)
+   ========================================================================== */
+.health-journey-section {
+  background-color: #f3e8d6;
+  padding: 80px 0;
+  border-top: 1px solid rgba(184, 128, 47, 0.22);
+}
+
+.health-journey-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.health-journey-card {
+  background: #fdfaf4;
+  border: 1px solid rgba(184, 128, 47, 0.34);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.26s ease, box-shadow 0.26s ease;
+}
+
+.health-journey-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(80, 24, 16, 0.1);
+}
+
+.health-journey-photo {
+  position: relative;
+  height: 196px;
+  overflow: hidden;
+  background: #eadcc7;
+}
+
+.health-journey-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.health-journey-card:hover .health-journey-photo img {
+  transform: scale(1.04);
+}
+
+.health-journey-badge {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  background: rgba(124, 15, 16, 0.9);
+  color: #f0c98a;
+  font-family: var(--font-label);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 5px 11px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(240, 201, 138, 0.45);
+}
+
+.health-journey-body {
+  padding: 22px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.health-journey-title {
+  font-family: var(--font-serif);
+  font-size: 1.24rem;
+  font-weight: 700;
+  color: var(--maroon);
+  margin-bottom: 8px;
+  line-height: 1.28;
+}
+
+.health-journey-summary {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--mut);
+  margin-bottom: 14px;
+}
+
+/* ==========================================================================
+   4. 39-BED HOSPITAL SPOTLIGHT (Soft Cream #fbf6ee)
+   ========================================================================== */
+.health-hospital-section {
+  background-color: #fbf6ee;
+  padding: 80px 0;
+  border-top: 1px solid rgba(184, 128, 47, 0.22);
+}
+
+.health-hospital-kpi {
+  margin-bottom: 32px;
+}
+
+.health-hospital-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 32px;
+  align-items: stretch;
+}
+
+.health-hospital-photo-frame {
+  position: relative;
+  background: #fdfaf4;
+  border: 1.5px solid rgba(184, 128, 47, 0.45);
+  border-radius: 22px;
+  padding: 12px;
+  box-shadow: 0 16px 36px rgba(68, 22, 16, 0.12);
+  display: flex;
+  flex-direction: column;
+}
+
+.health-hospital-photo-inner {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 100%;
+  min-height: 380px;
+}
+
+.health-hospital-photo-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+.health-hospital-photo-caption {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 28px 20px 14px;
+  background: linear-gradient(to top, rgba(46, 12, 10, 0.88), transparent);
+  color: #fdfaf4;
+}
+
+.health-hospital-photo-caption strong {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #f0c98a;
+  margin-bottom: 3px;
+}
+
+.health-hospital-photo-caption span {
+  font-size: 0.78rem;
+  color: rgba(253, 250, 244, 0.85);
+}
+
+.health-hospital-badge-corner {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 2;
+  background: var(--maroon);
+  color: #f0c98a;
+  font-family: var(--font-label);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 6px 13px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(240, 201, 138, 0.45);
+}
+
+.health-hospital-depts-card {
+  background: #fdfaf4;
+  border: 1px solid rgba(184, 128, 47, 0.32);
+  border-radius: 22px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.health-hospital-depts-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--maroon);
+  margin-bottom: 8px;
+}
+
+.health-hospital-sub {
+  font-size: 0.89rem;
+  color: var(--mut);
+  margin-bottom: 20px;
+}
+
+.health-hospital-depts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.health-dept-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: #fbf6ee;
+  border: 1px solid rgba(184, 128, 47, 0.24);
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+
+.health-dept-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--maroon);
+  color: #f0c98a;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.health-dept-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.health-dept-title {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--maroon);
+  margin-bottom: 3px;
+}
+
+.health-dept-desc {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--mut);
+}
+
+/* ==========================================================================
+   5. HEALTHCARE GALLERY (Warm Sand #f3e8d6)
+   ========================================================================== */
+.health-gallery-section {
+  background-color: #f3e8d6;
+  padding: 84px 0 88px;
+  border-top: 1px solid rgba(184, 128, 47, 0.22);
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   6. SPONSORSHIP & CTA (Warm Ivory #fdfaf4)
+   ========================================================================== */
+.health-sponsor-section {
+  background-color: #fdfaf4;
+  padding: 80px 0 84px;
+  border-top: 1px solid rgba(184, 128, 47, 0.22);
+}
+
+.health-closing-banner {
+  margin-bottom: 52px;
+}
+
+.health-sponsor-card {
+  margin-bottom: 0;
+}
+
+.health-tier-label {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: var(--maroon);
+  margin-bottom: 4px;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .health-overview-grid,
+  .health-hospital-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .health-services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .health-journey-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .healthcare-page .inner-hero-bg-photo.healthcare-hero-photo {
+    left: 0;
+    width: 100%;
+    background-position: 72% 30%;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .health-overview-section,
+  .health-services-section,
+  .health-journey-section,
+  .health-hospital-section,
+  .health-gallery-section,
+  .health-sponsor-section {
+    padding: 56px 0;
+  }
+
+  .health-journey-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .health-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .health-showcase-card {
+    min-height: auto;
+    padding: 8px 0;
+  }
+
+  .health-showcase-main {
+    width: 100%;
+  }
+
+  .health-showcase-sub {
+    position: relative;
+    width: 100%;
+    bottom: auto;
+    right: auto;
+    margin-top: 14px;
+  }
+
+  .health-showcase-badge {
+    position: static;
+    margin-top: 12px;
+    width: 100%;
+  }
+}

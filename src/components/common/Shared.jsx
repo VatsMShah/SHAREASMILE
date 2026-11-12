@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { IMG } from '@/data';
+import { IMG, DONATION_URL } from '@/data';
 
 export const Eyebrow = ({ children }) => (
   <small className="eyebrow">{children}</small>
@@ -71,9 +71,14 @@ export const Nums = ({ items }) => (
 export const Cta = ({ children }) => (
   <div className="cta">
     <p>{children}</p>
-    <Link to="/contact" className="btn solid">
+    <a
+      href={DONATION_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="btn solid"
+    >
       ♡ Donate
-    </Link>
+    </a>
   </div>
 );
 

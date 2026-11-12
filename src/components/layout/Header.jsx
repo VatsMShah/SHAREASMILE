@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import { INITIATIVES } from '@/data';
+import { INITIATIVES, DONATION_URL } from '@/data';
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -64,30 +64,38 @@ export default function Header() {
             </div>
           </div>
 
+          <NavLink to="/events" className={({ isActive }) => (isActive ? 'active' : '')}>
+            Events
+          </NavLink>
+
           <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>
             Contact Us
           </NavLink>
 
           {/* Mobile drawer donate button */}
           <div className="hdr-mobile-donate">
-            <Link
-              to="/contact"
+            <a
+              href={DONATION_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn solid sm btn-donate"
               onClick={() => setOpen(false)}
             >
               Donate
-            </Link>
+            </a>
           </div>
         </nav>
 
         {/* Right: Donate button on desktop & Burger button on mobile */}
         <div className="hdr-right">
-          <Link
-            to="/contact"
+          <a
+            href={DONATION_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn solid sm btn-donate hdr-desktop-donate"
           >
             Donate
-          </Link>
+          </a>
 
           <button
             className={`burger ${open ? 'open' : ''}`}

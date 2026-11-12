@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { DONATION_URL } from '@/data';
 import { SPONSOR_ESSENTIALS, SPONSOR_TIERS } from '@/data/educationData';
 
 export default function EducationSponsorAndCta() {
@@ -70,9 +71,14 @@ export default function EducationSponsorAndCta() {
               <Link to="/contact?intent=sponsor-a-child" className="btn solid">
                 Sponsor a Child
               </Link>
-              <Link to="/contact?intent=donate-education" className="btn ghost">
+              <a
+                href={DONATION_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn ghost"
+              >
                 Donate Now
-              </Link>
+              </a>
             </div>
           </div>
         </div>

@@ -1,3 +1,5 @@
+export const DONATION_URL = 'https://www.zeffy.com/en-US/donation-form/share-a-smile';
+
 export const IMG = (n) => `/images/banner-${n}.png`;
 
 export const INITIATIVES = [

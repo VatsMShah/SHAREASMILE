@@ -1,0 +1,584 @@
+/* ==========================================================================
+   POVERTY ENRICHMENT PAGE STYLESHEET
+   Harmonized with Design System: Warm Ivory (#fdfaf4), Soft Cream (#fbf6ee),
+   Warm Sand (#f3e8d6), Deep Maroon (#8b1a1a / #7c0f10), Warm Gold (#b8802f)
+   ========================================================================== */
+
+.poverty-page {
+  background-color: #fbf6ee;
+  color: var(--ink);
+}
+
+.poverty-page .inner-hero-bg-photo.poverty-hero-photo {
+  left: auto;
+  right: 0;
+  width: 58%;
+  background-position: 50% 30%;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.85) 28%, #000 52%);
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.85) 28%, #000 52%);
+}
+
+/* ==========================================================================
+   1. OVERVIEW & DIGNITY (Soft Cream #fbf6ee)
+   ========================================================================== */
+.poverty-overview-section {
+  background-color: #fbf6ee;
+  padding: 76px 0 88px;
+}
+
+.poverty-overview-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.poverty-overview-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.poverty-duo-frame {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  min-height: 440px;
+  padding: 16px;
+}
+
+.poverty-duo-decor {
+  position: absolute;
+  inset: 18px 24px 18px 24px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(243, 232, 214, 0.75), rgba(253, 250, 244, 0.5));
+  border: 1.5px dashed rgba(184, 128, 47, 0.45);
+  z-index: 0;
+}
+
+.poverty-frame-main {
+  position: relative;
+  z-index: 1;
+  width: 82%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(68, 22, 16, 0.14);
+  border: 4px solid #fdfaf4;
+}
+
+.poverty-frame-main img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  object-position: center 25%;
+  display: block;
+}
+
+.poverty-frame-main-cap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 14px;
+  background: linear-gradient(to top, rgba(20, 10, 8, 0.85) 0%, transparent 100%);
+  color: #fdfaf4;
+  font-family: var(--font-label);
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.poverty-frame-inset {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  z-index: 2;
+  width: 52%;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+  border: 4px solid #fdfaf4;
+  background: #fdfaf4;
+}
+
+.poverty-frame-inset img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.poverty-badge-floating {
+  position: absolute;
+  top: -8px;
+  right: 18px;
+  z-index: 3;
+  background: linear-gradient(135deg, #7c0f10 0%, #441610 100%);
+  color: #fdfaf4;
+  padding: 10px 16px;
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(68, 22, 16, 0.28);
+  border: 1px solid rgba(240, 201, 138, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.poverty-badge-floating strong {
+  font-family: var(--font-label);
+  font-size: 0.76rem;
+  color: #f0c98a;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.poverty-badge-floating span {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ==========================================================================
+   2. DAILY MIDDAY NOURISHMENT (Warm Ivory #fdfaf4)
+   ========================================================================== */
+.poverty-meals-section {
+  background-color: #fdfaf4;
+  padding: 84px 0 92px;
+  border-top: 1px solid rgba(184, 128, 47, 0.15);
+}
+
+.poverty-features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-top: 48px;
+}
+
+.poverty-feature-card {
+  background: #fff;
+  border: 1.5px solid rgba(184, 128, 47, 0.2);
+  border-radius: 20px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 22px rgba(68, 22, 16, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.poverty-feature-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(184, 128, 47, 0.5);
+  box-shadow: 0 16px 32px rgba(68, 22, 16, 0.1);
+}
+
+.poverty-feature-top {
+  margin-bottom: 18px;
+}
+
+.poverty-feature-title {
+  font-family: var(--font-title);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #7c0f10;
+  margin: 0 0 10px;
+  line-height: 1.3;
+}
+
+.poverty-feature-desc {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #554440;
+  margin: 0;
+}
+
+/* Center-by-Center Showcase Panel */
+.poverty-centers-panel {
+  margin-top: 56px;
+  background: #fbf6ee;
+  border: 1.5px solid rgba(184, 128, 47, 0.25);
+  border-radius: 24px;
+  padding: 38px 36px 42px;
+  box-shadow: 0 12px 30px rgba(68, 22, 16, 0.06);
+}
+
+.poverty-centers-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(184, 128, 47, 0.2);
+  margin-bottom: 30px;
+}
+
+.poverty-centers-tag {
+  font-family: var(--font-label);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #b8802f;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.poverty-centers-title {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #441610;
+  margin: 0;
+}
+
+.poverty-centers-sub {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  color: #665550;
+  margin: 0;
+  max-width: 440px;
+  text-align: right;
+}
+
+.poverty-centers-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.poverty-center-card {
+  background: #fdfaf4;
+  border: 1px solid rgba(184, 128, 47, 0.2);
+  border-radius: 16px;
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.poverty-center-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(68, 22, 16, 0.08);
+}
+
+.poverty-center-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed rgba(184, 128, 47, 0.25);
+}
+
+.poverty-center-name {
+  font-family: var(--font-title);
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #7c0f10;
+}
+
+.poverty-center-reg {
+  font-family: var(--font-label);
+  font-size: 0.65rem;
+  color: #8b6534;
+  font-weight: 600;
+  background: rgba(184, 128, 47, 0.12);
+  padding: 2px 7px;
+  border-radius: var(--radius-full);
+}
+
+.poverty-center-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 14px;
+}
+
+.poverty-center-stat strong {
+  font-family: var(--font-title);
+  font-size: 1.45rem;
+  color: #7c0f10;
+  line-height: 1.1;
+}
+
+.poverty-center-stat span {
+  font-family: var(--font-label);
+  font-size: 0.7rem;
+  color: #887770;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.poverty-center-ben {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid rgba(184, 128, 47, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+}
+
+.poverty-center-ben span {
+  color: #776660;
+}
+
+.poverty-center-ben strong {
+  color: #441610;
+}
+
+/* ==========================================================================
+   3. HUMANITARIAN CRISIS RESPONSE (Warm Sand #f3e8d6)
+   ========================================================================== */
+.poverty-relief-section {
+  background-color: #f3e8d6;
+  padding: 84px 0 92px;
+  border-top: 1px solid rgba(184, 128, 47, 0.2);
+}
+
+.poverty-relief-kpi {
+  margin: 44px 0 36px;
+}
+
+.poverty-kpi-stats-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding-left: 28px;
+  border-left: 1px solid rgba(240, 201, 138, 0.2);
+}
+
+.poverty-relief-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 32px;
+  margin-top: 36px;
+}
+
+.poverty-relief-narrative-card {
+  background: #fdfaf4;
+  border: 1.5px solid rgba(184, 128, 47, 0.25);
+  border-radius: 20px;
+  padding: 36px 34px;
+  box-shadow: 0 10px 26px rgba(68, 22, 16, 0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+.poverty-relief-narrative-card h3 {
+  font-family: var(--font-title);
+  font-size: 1.45rem;
+  color: #7c0f10;
+  margin: 0 0 16px;
+  line-height: 1.3;
+}
+
+.poverty-relief-narrative-card p {
+  font-family: var(--font-body);
+  font-size: 0.94rem;
+  line-height: 1.7;
+  color: #554440;
+  margin: 0 0 14px;
+}
+
+.poverty-relief-narrative-card p strong {
+  color: #7c0f10;
+}
+
+.poverty-relief-badge-line {
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px dashed rgba(184, 128, 47, 0.3);
+  font-family: var(--font-label);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #b8802f;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.poverty-relief-metrics-card {
+  background: #fdfaf4;
+  border: 1.5px solid rgba(184, 128, 47, 0.25);
+  border-radius: 20px;
+  padding: 34px 30px;
+  box-shadow: 0 10px 26px rgba(68, 22, 16, 0.06);
+}
+
+.poverty-relief-metrics-card h3 {
+  font-family: var(--font-title);
+  font-size: 1.25rem;
+  color: #441610;
+  margin: 0 0 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(184, 128, 47, 0.2);
+}
+
+.poverty-relief-metrics-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.poverty-metric-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: #fbf6ee;
+  border: 1px solid rgba(184, 128, 47, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.poverty-metric-row:hover {
+  transform: translateX(4px);
+  border-color: rgba(184, 128, 47, 0.35);
+}
+
+.poverty-metric-val {
+  font-family: var(--font-title);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #7c0f10;
+  white-space: nowrap;
+}
+
+.poverty-metric-lbl {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: #554440;
+  text-align: right;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   4. PHOTO GALLERY (Soft Cream #fbf6ee)
+   ========================================================================== */
+.poverty-gallery-section {
+  background-color: #fbf6ee;
+  padding: 88px 0 96px;
+  border-top: 1px solid rgba(184, 128, 47, 0.18);
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   5. SPONSOR & CTA (Warm Ivory #fdfaf4)
+   ========================================================================== */
+.poverty-sponsor-section {
+  background-color: #fdfaf4;
+  padding: 84px 0 96px;
+  border-top: 1px solid rgba(184, 128, 47, 0.2);
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .poverty-overview-grid {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .poverty-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .poverty-centers-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .poverty-relief-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .poverty-kpi-stats-strip {
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 0;
+    border-left: none;
+    border-top: 1px solid rgba(240, 201, 138, 0.2);
+    padding-top: 18px;
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .poverty-page .inner-hero-bg-photo.poverty-hero-photo {
+    width: 100%;
+    opacity: 0.35;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+  }
+
+  .poverty-overview-section,
+  .poverty-meals-section,
+  .poverty-relief-section,
+  .poverty-gallery-section,
+  .poverty-sponsor-section {
+    padding: 60px 0;
+  }
+
+  .poverty-features-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .poverty-centers-panel {
+    padding: 24px 20px;
+  }
+
+  .poverty-centers-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .poverty-centers-sub {
+    text-align: left;
+  }
+
+  .poverty-centers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .poverty-kpi-stats-strip {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .poverty-duo-frame {
+    min-height: auto;
+    padding: 10px 0;
+  }
+
+  .poverty-frame-main {
+    width: 100%;
+  }
+
+  .poverty-frame-inset {
+    position: relative;
+    width: 100%;
+    bottom: auto;
+    right: auto;
+    margin-top: 16px;
+  }
+
+  .poverty-badge-floating {
+    position: static;
+    margin-top: 14px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .poverty-metric-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .poverty-metric-lbl {
+    text-align: left;
+  }
+}
