@@ -21,7 +21,7 @@ export const INITIATIVES = [
     name: 'Poverty Enrichment',
     path: '/poverty-enrichment',
     desc: 'Creating opportunities for a self-reliant future.',
-    img: '/images/pillar-poverty.png',
+    img: '/images/poverty/poverty-10.jpg',
     icon: '👥',
     badgeNum: 2
   },

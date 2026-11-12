@@ -1,0 +1,1359 @@
+/* ==========================================================================
+   EDUCATION PAGE STYLESHEET
+   Palette Alignment: Warm Ivory (#fdfaf4), Soft Cream (#fbf6ee),
+   Warm Sand (#f3e8d6), Deep Maroon (#8b1a1a / #7c0f10), Warm Gold (#b8802f)
+   ========================================================================== */
+
+.education-page {
+  background-color: #fbf6ee;
+  color: var(--ink);
+}
+
+.education-page .inner-hero-bg-photo.edu-hero-photo {
+  left: auto;
+  right: 0;
+  width: 58%;
+  background-position: 62% 24%;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.85) 28%, #000 52%);
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.85) 28%, #000 52%);
+}
+
+/* Shared Section Header Helpers */
+.edu-section-header {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 48px;
+}
+
+.edu-section-title {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: clamp(1.75rem, 2.8vw, 2.25rem);
+  line-height: 1.2;
+  color: var(--maroon);
+  margin: 12px 0 16px;
+}
+
+.edu-section-title.edu-left {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.edu-section-subtitle {
+  font-size: 0.98rem;
+  line-height: 1.72;
+  color: var(--mut);
+  margin: 0 auto;
+}
+
+.edu-eyebrow-left {
+  justify-content: flex-start;
+}
+
+.edu-icon-box {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(139, 26, 26, 0.08), rgba(184, 128, 47, 0.12));
+  border: 1px solid rgba(184, 128, 47, 0.28);
+  color: var(--maroon);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.edu-icon-box svg {
+  width: 22px;
+  height: 22px;
+}
+
+.edu-icon-box.gold {
+  background: linear-gradient(135deg, rgba(184, 128, 47, 0.16), rgba(240, 201, 138, 0.25));
+  color: #8c5d19;
+}
+
+/* ==========================================================================
+   2. TRANSFORMING EDUCATION IN RURAL INDIA (Soft Cream #fbf6ee)
+   ========================================================================== */
+.edu-transform-section {
+  background-color: #fbf6ee;
+  padding: 76px 0 88px;
+}
+
+.edu-transform-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.edu-lead-quote {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-style: italic;
+  font-weight: 600;
+  color: #5b1815;
+  line-height: 1.55;
+  padding-left: 16px;
+  border-left: 3px solid var(--gold);
+  margin: 0 0 20px;
+}
+
+.edu-prose {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--ink);
+}
+
+.edu-highlight-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.edu-strip-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fdfaf4;
+  border: 1px solid rgba(184, 128, 47, 0.34);
+  border-radius: var(--radius-full);
+  padding: 7px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--maroon);
+}
+
+.edu-strip-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+/* Arched Portal + Staggered Editorial Duo Frames */
+.edu-transform-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.edu-duo-frames {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 18px;
+  align-items: start;
+  padding: 18px 14px 12px;
+}
+
+.edu-duo-backdrop {
+  position: absolute;
+  inset: 0 24px 36px 24px;
+  border-radius: 28px;
+  background: linear-gradient(145deg, rgba(243, 232, 214, 0.72), rgba(253, 250, 244, 0.55));
+  border: 1.5px dashed rgba(184, 128, 47, 0.45);
+  z-index: 0;
+}
+
+.edu-duo-arch {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  background: #fdfaf4;
+  border: 1.5px solid rgba(184, 128, 47, 0.4);
+  border-radius: 140px 140px 22px 22px;
+  padding: 10px 10px 14px;
+  box-shadow: 0 16px 36px rgba(68, 22, 16, 0.14);
+}
+
+.edu-duo-arch-inner {
+  border-radius: 132px 132px 14px 14px;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+}
+
+.edu-duo-arch-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 78% 16%;
+}
+
+.edu-duo-ribbon {
+  text-align: center;
+  font-family: var(--font-label);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--maroon);
+  padding-top: 12px;
+}
+
+.edu-duo-corridor {
+  position: relative;
+  z-index: 2;
+  margin: 56px 0 0;
+  background: #fdfaf4;
+  border: 1.5px solid rgba(184, 128, 47, 0.42);
+  border-radius: 22px;
+  padding: 10px 10px 14px;
+  box-shadow: 0 18px 38px rgba(68, 22, 16, 0.16);
+  transform: rotate(1.6deg);
+}
+
+.edu-duo-corridor-inner {
+  border-radius: 14px;
+  overflow: hidden;
+  aspect-ratio: 4 / 4.2;
+}
+
+.edu-duo-corridor-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 22%;
+}
+
+.edu-duo-subtag {
+  padding: 12px 6px 2px;
+}
+
+.edu-duo-subtag strong {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--maroon);
+  line-height: 1.2;
+}
+
+.edu-duo-subtag span {
+  font-size: 0.76rem;
+  color: var(--mut);
+}
+
+/* ==========================================================================
+   3. INFRASTRUCTURE GRID (Warm Ivory #fdfaf4)
+   ========================================================================== */
+.edu-infra-section {
+  background-color: #fdfaf4;
+  padding: 80px 0;
+  border-top: 1px solid rgba(184, 128, 47, 0.2);
+}
+
+.edu-infra-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.edu-infra-card {
+  background: #fbf6ee;
+  border: 1px solid rgba(184, 128, 47, 0.28);
+  border-radius: 16px;
+  padding: 24px 20px;
+  transition: transform 0.26s ease, box-shadow 0.26s ease, border-color 0.26s ease;
+}
+
+.edu-infra-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(184, 128, 47, 0.65);
+  box-shadow: 0 12px 28px rgba(90, 28, 20, 0.08);
+}
+
+.edu-infra-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.edu-infra-badge {
+  font-family: var(--font-label);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: var(--maroon);
+  color: #fdfaf4;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.edu-infra-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--maroon);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.edu-infra-card-desc {
+  font-size: 0.87rem;
+  line-height: 1.6;
+  color: var(--mut);
+}
+
+/* ==========================================================================
+   4. BEYOND THE CLASSROOM / ENRICHMENT (Warm Sand #f3e8d6)
+   ========================================================================== */
+.edu-enrichment-section {
+  background-color: #f3e8d6;
+  padding: 80px 0;
+  border-top: 1px solid rgba(184, 128, 47, 0.22);
+}
+
+.edu-exhibitions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 34px;
+}
+
+.edu-exhibition-card {
+  background: #fdfaf4;
+  border: 1px solid rgba(184, 128, 47, 0.34);
+  border-top: 4px solid var(--maroon);
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.26s ease, box-shadow 0.26s ease;
+}
+
+.edu-exhibition-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(82, 22, 16, 0.1);
+}
+
+.edu-exhibition-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.edu-exhibition-tag {
+  font-family: var(--font-label);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8c5d19;
+  background: rgba(184, 128, 47, 0.14);
+  border: 1px solid rgba(184, 128, 47, 0.3);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.edu-exhibition-title {
+  font-family: var(--font-serif);
+  font-size: 1.32rem;
+  font-weight: 700;
+  color: var(--maroon);
+  margin-bottom: 10px;
+}
+
+.edu-exhibition-desc {
+  font-size: 0.91rem;
+  line-height: 1.66;
+  color: var(--ink);
+}
+
+/* Opportunities 2x2 Strip */
+.edu-opportunities-panel {
+  background: #fdfaf4;
+  border: 1px solid rgba(184, 128, 47, 0.32);
+  border-radius: 20px;
+  padding: 32px;
+}
+
+.edu-opportunities-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(184, 128, 47, 0.24);
+  margin-bottom: 24px;
+}
+
+.edu-opportunities-heading {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--maroon);
+}
+
+.edu-opportunities-sub {
+  font-size: 0.88rem;
+  color: var(--mut);
+}
+
+.edu-opportunities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.edu-opportunity-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 16px;
+  background: #fbf6ee;
+  border: 1px solid rgba(184, 128, 47, 0.22);
+  border-radius: 14px;
+}
+
+.edu-opportunity-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--maroon);
+  color: #f0c98a;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.edu-opportunity-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.edu-opportunity-title {
+  font-family: var(--font-serif);
+  font-size: 1.04rem;
+  font-weight: 700;
+  color: var(--maroon);
+  margin-bottom: 4px;
+}
+
+.edu-opportunity-desc {
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--mut);
+}
+
+/* ==========================================================================
+   5. CELEBRATING LEARNING + OPTION 2 KINETIC MEMORY FILMSTRIP (#fbf6ee)
+   ========================================================================== */
+.edu-gallery-section {
+  background-color: #fbf6ee;
+  padding: 84px 0 88px;
+  border-top: 1px solid rgba(184, 128, 47, 0.2);
+  overflow: hidden;
+}
+
+.edu-gallery-header {
+  margin-bottom: 36px;
+}
+
+/* Dual-Row Filmstrip Viewport with Soft Side Fade Masks */
+.edu-filmstrip-viewport {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 12px 0;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000 5%,
+    #000 95%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000 5%,
+    #000 95%,
+    transparent 100%
+  );
+}
+
+.edu-marquee-row {
+  width: 100%;
+  overflow: hidden;
+  padding: 8px 0;
+}
+
+.edu-marquee-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.edu-marquee-track.dir-left {
+  animation: eduMarqueeLeft 44s linear infinite;
+}
+
+.edu-marquee-track.dir-right {
+  animation: eduMarqueeRight 48s linear infinite;
+}
+
+.edu-marquee-row:hover .edu-marquee-track,
+.edu-marquee-row:focus-within .edu-marquee-track,
+.edu-marquee-row.is-paused .edu-marquee-track {
+  animation-play-state: paused;
+}
+
+.edu-marquee-set {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding-right: 22px;
+  flex-shrink: 0;
+}
+
+@keyframes eduMarqueeLeft {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes eduMarqueeRight {
+  from {
+    transform: translate3d(-50%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Filmstrip Cards */
+.edu-film-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: #fdfaf4;
+  border: 1.5px solid rgba(184, 128, 47, 0.35);
+  border-radius: 18px;
+  padding: 10px 10px 14px;
+  box-shadow: 0 8px 22px rgba(68, 22, 16, 0.08);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.36s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.36s ease,
+    border-color 0.36s ease,
+    opacity 0.3s ease;
+}
+
+.edu-film-card.variant-wide {
+  width: 360px;
+}
+
+.edu-film-card.variant-standard {
+  width: 300px;
+}
+
+.edu-film-card.variant-portrait {
+  width: 255px;
+}
+
+.edu-film-card.tilt-left {
+  transform: rotate(-0.85deg);
+}
+
+.edu-film-card.tilt-right {
+  transform: rotate(0.85deg);
+}
+
+.edu-marquee-row:hover .edu-film-card:not(:hover) {
+  opacity: 0.78;
+}
+
+.edu-film-card:hover,
+.edu-film-card:focus-visible {
+  transform: translateY(-7px) scale(1.03) rotate(0deg);
+  border-color: var(--gold);
+  box-shadow: 0 18px 36px rgba(90, 24, 18, 0.18);
+  opacity: 1 !important;
+  outline: none;
+  z-index: 4;
+}
+
+.edu-film-media {
+  position: relative;
+  width: 100%;
+  height: 215px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ede0cb;
+}
+
+.edu-film-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.edu-film-card:hover .edu-film-media img {
+  transform: scale(1.06);
+}
+
+.edu-film-expand-pill {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 11px;
+  border-radius: var(--radius-full);
+  background: rgba(124, 15, 16, 0.9);
+  color: #fdfaf4;
+  font-size: 0.72rem;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.edu-film-card:hover .edu-film-expand-pill,
+.edu-film-card:focus-visible .edu-film-expand-pill {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.edu-film-caption {
+  padding: 12px 6px 0;
+}
+
+.edu-film-cat {
+  display: inline-block;
+  font-family: var(--font-label);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8c5d19;
+  margin-bottom: 3px;
+}
+
+.edu-film-title {
+  font-family: var(--font-serif);
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--maroon);
+  line-height: 1.3;
+}
+
+/* Lightbox Modal */
+.edu-lightbox-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(34, 12, 10, 0.84);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.edu-lightbox-dialog {
+  position: relative;
+  width: 100%;
+  max-width: 920px;
+  background: #fdfaf4;
+  border: 2px solid rgba(184, 128, 47, 0.55);
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 28px 64px rgba(0, 0, 0, 0.45);
+}
+
+.edu-lightbox-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 5;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid rgba(253, 250, 244, 0.5);
+  background: rgba(90, 12, 13, 0.86);
+  color: #fdfaf4;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edu-lightbox-close:hover {
+  background: var(--maroon);
+}
+
+.edu-lightbox-stage {
+  position: relative;
+  background: #23110e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: min(62vh, 520px);
+}
+
+.edu-lightbox-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.edu-lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(240, 201, 138, 0.5);
+  background: rgba(45, 13, 12, 0.78);
+  color: #fdfaf4;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.edu-lightbox-nav:hover {
+  background: var(--maroon);
+}
+
+.edu-lightbox-nav.prev {
+  left: 14px;
+}
+
+.edu-lightbox-nav.next {
+  right: 14px;
+}
+
+.edu-lightbox-meta {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 26px 22px;
+}
+
+.edu-lightbox-cat {
+  display: inline-block;
+  font-family: var(--font-label);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8c5d19;
+  margin-bottom: 4px;
+}
+
+.edu-lightbox-title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--maroon);
+  margin-bottom: 4px;
+}
+
+.edu-lightbox-desc {
+  font-size: 0.9rem;
+  color: var(--mut);
+}
+
+.edu-lightbox-count {
+  font-family: var(--font-label);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--maroon);
+  background: #fbf6ee;
+  border: 1px solid rgba(184, 128, 47, 0.35);
+  border-radius: var(--radius-full);
+  padding: 5px 12px;
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   6. EMPOWERING EDUCATORS (Warm Ivory #fdfaf4)
+   ========================================================================== */
+.edu-teachers-section {
+  background-color: #fdfaf4;
+  padding: 80px 0;
+  border-top: 1px solid rgba(184, 128, 47, 0.2);
+}
+
+.edu-teachers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.edu-teacher-card {
+  background: #fbf6ee;
+  border: 1px solid rgba(184, 128, 47, 0.34);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.26s ease, box-shadow 0.26s ease;
+}
+
+.edu-teacher-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(80, 24, 16, 0.1);
+}
+
+.edu-teacher-photo {
+  position: relative;
+  height: 196px;
+  overflow: hidden;
+  background: #eadcc7;
+}
+
+.edu-teacher-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.edu-teacher-card:hover .edu-teacher-photo img {
+  transform: scale(1.04);
+}
+
+.edu-teacher-photo-badge {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  background: rgba(124, 15, 16, 0.9);
+  color: #f0c98a;
+  font-family: var(--font-label);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 5px 11px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(240, 201, 138, 0.45);
+}
+
+.edu-teacher-body {
+  padding: 22px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.edu-teacher-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--maroon);
+  margin-bottom: 8px;
+  line-height: 1.28;
+}
+
+.edu-teacher-summary {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--mut);
+  margin-bottom: 14px;
+}
+
+.edu-check-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.edu-check-list li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.edu-check-mark {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(139, 26, 26, 0.1);
+  color: var(--maroon);
+  font-size: 0.72rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   7. GIRLS' HOSTEL SPOTLIGHT (Warm Sand #f3e8d6)
+   ========================================================================== */
+.edu-hostel-section {
+  background-color: #f3e8d6;
+  padding: 80px 0;
+  border-top: 1px solid rgba(184, 128, 47, 0.24);
+}
+
+.edu-hostel-kpi-bar {
+  background: linear-gradient(135deg, #7c0f10 0%, #5e0a0b 100%);
+  color: #fdfaf4;
+  border-radius: 20px;
+  border: 1.5px solid rgba(240, 201, 138, 0.45);
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+  box-shadow: 0 16px 36px rgba(72, 12, 12, 0.18);
+}
+
+.edu-hostel-loc {
+  display: block;
+  font-family: var(--font-label);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #f0c98a;
+  margin-bottom: 6px;
+}
+
+.edu-hostel-kpi-headline strong {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #fdfaf4;
+}
+
+.edu-hostel-kpi-metrics {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.edu-hostel-metric {
+  border-left: 1px solid rgba(240, 201, 138, 0.35);
+  padding-left: 20px;
+}
+
+.edu-hostel-metric-val {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #f0c98a;
+  line-height: 1.05;
+}
+
+.edu-hostel-metric-lbl {
+  font-size: 0.78rem;
+  color: rgba(253, 250, 244, 0.9);
+}
+
+.edu-hostel-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.edu-hostel-story-card,
+.edu-hostel-facilities-card {
+  background: #fdfaf4;
+  border: 1px solid rgba(184, 128, 47, 0.32);
+  border-radius: 18px;
+  padding: 30px 28px;
+}
+
+.edu-hostel-story-card h3,
+.edu-hostel-facilities-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.32rem;
+  font-weight: 700;
+  color: var(--maroon);
+  margin-bottom: 14px;
+}
+
+.edu-hostel-story-card p {
+  font-size: 0.94rem;
+  line-height: 1.72;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+
+.edu-hostel-story-card p:last-child {
+  margin-bottom: 0;
+}
+
+.edu-hostel-fac-sub {
+  font-size: 0.89rem;
+  color: var(--mut);
+  margin-bottom: 18px;
+}
+
+.edu-hostel-fac-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.edu-hostel-fac-item:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
+.edu-hostel-fac-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fbf6ee;
+  border: 1px solid rgba(184, 128, 47, 0.28);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.edu-hostel-fac-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background: rgba(139, 26, 26, 0.08);
+  color: var(--maroon);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.edu-hostel-fac-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ==========================================================================
+   8. CHILD SPONSORSHIP + CONTAINED CLOSING CTA (Warm Ivory #fdfaf4)
+   ========================================================================== */
+.edu-sponsor-section {
+  background-color: #fdfaf4;
+  padding: 80px 0 84px;
+  border-top: 1px solid rgba(184, 128, 47, 0.22);
+}
+
+.edu-sponsor-card {
+  background: #fbf6ee;
+  border: 1.5px solid rgba(184, 128, 47, 0.42);
+  border-radius: 22px;
+  padding: 40px 38px;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 38px;
+  align-items: center;
+  box-shadow: 0 12px 32px rgba(72, 24, 18, 0.06);
+  margin-bottom: 0;
+}
+
+.edu-sponsor-lead {
+  font-size: 0.95rem;
+  line-height: 1.72;
+  color: var(--ink);
+  margin-bottom: 20px;
+}
+
+.edu-essentials-heading {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--maroon);
+  margin-bottom: 12px;
+}
+
+.edu-essentials-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 18px;
+}
+
+.edu-essentials-list li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.edu-essentials-check {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(184, 128, 47, 0.2);
+  color: var(--maroon);
+  font-size: 0.72rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.edu-tiers-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.edu-tier-box {
+  background: #fdfaf4;
+  border: 1.5px solid rgba(184, 128, 47, 0.42);
+  border-left: 5px solid var(--maroon);
+  border-radius: 14px;
+  padding: 18px 20px;
+}
+
+.edu-tier-price {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.edu-tier-price strong {
+  font-family: var(--font-serif);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--maroon);
+  line-height: 1;
+}
+
+.edu-tier-price span {
+  font-family: var(--font-label);
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #8c5d19;
+}
+
+.edu-tier-box p {
+  font-size: 0.87rem;
+  line-height: 1.52;
+  color: var(--mut);
+}
+
+.edu-sponsor-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Contained Closing Maroon Card inside Warm Ivory */
+.edu-closing-banner {
+  background: linear-gradient(135deg, #7c0f10 0%, #5b090a 100%);
+  border: 1.5px solid rgba(240, 201, 138, 0.45);
+  border-radius: 24px;
+  padding: 56px 32px;
+  text-align: center;
+  color: #fdfaf4;
+  box-shadow: 0 20px 44px rgba(72, 10, 10, 0.2);
+  margin-bottom: 52px;
+}
+
+.edu-closing-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.edu-closing-eyebrow {
+  display: inline-block;
+  font-family: var(--font-label);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #f0c98a;
+  margin-bottom: 12px;
+}
+
+.edu-closing-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 3vw, 2.35rem);
+  font-weight: 700;
+  color: #fdfaf4;
+  margin-bottom: 16px;
+}
+
+.edu-closing-copy {
+  font-size: 0.97rem;
+  line-height: 1.72;
+  color: rgba(253, 250, 244, 0.92);
+  margin-bottom: 14px;
+}
+
+.edu-closing-tag {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #f0c98a;
+  margin-bottom: 26px;
+}
+
+/* ==========================================================================
+   ACCESSIBILITY: REDUCED MOTION
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  .edu-marquee-track {
+    animation: none !important;
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .edu-transform-grid,
+  .edu-sponsor-card {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .edu-infra-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .edu-exhibitions-grid,
+  .edu-teachers-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .edu-hostel-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-page .inner-hero-bg-photo.edu-hero-photo {
+    left: 0;
+    width: 100%;
+    background-position: 75% 22%;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .education-page .inner-hero-scrim {
+    background: linear-gradient(
+      90deg,
+      rgba(251, 246, 238, 0.96) 0%,
+      rgba(251, 246, 238, 0.88) 56%,
+      rgba(251, 246, 238, 0.35) 100%
+    );
+  }
+
+  .education-page .about-section-eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    line-height: 1.45;
+  }
+
+  .edu-transform-section,
+  .edu-infra-section,
+  .edu-enrichment-section,
+  .edu-gallery-section,
+  .edu-teachers-section,
+  .edu-hostel-section,
+  .edu-sponsor-section {
+    padding: 56px 0;
+  }
+
+  .edu-exhibitions-grid,
+  .edu-opportunities-grid,
+  .edu-teachers-grid,
+  .edu-essentials-list,
+  .edu-hostel-fac-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .edu-film-card.variant-wide {
+    width: 290px;
+  }
+
+  .edu-film-card.variant-standard {
+    width: 255px;
+  }
+
+  .edu-film-card.variant-portrait {
+    width: 225px;
+  }
+
+  .edu-film-media {
+    height: 185px;
+  }
+
+  .edu-sponsor-card {
+    padding: 28px 22px;
+  }
+
+  .edu-hostel-kpi-bar {
+    padding: 24px 20px;
+  }
+
+  .edu-hostel-metric {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .edu-infra-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .edu-duo-frames {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 8px 0;
+  }
+
+  .edu-duo-backdrop {
+    display: none;
+  }
+
+  .edu-duo-corridor {
+    margin-top: 0;
+    transform: none;
+  }
+
+  .edu-lightbox-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
