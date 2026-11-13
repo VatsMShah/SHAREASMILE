@@ -1,0 +1,721 @@
+/* ==========================================================================
+   EVENTS PAGE STYLESHEET
+   Harmonized with Design System: Warm Ivory (#fdfaf4), Soft Cream (#fbf6ee),
+   Warm Sand (#f3e8d6), Deep Maroon (#8b1a1a / #7c0f10), Warm Gold (#b8802f)
+   ========================================================================== */
+
+.events-page {
+  background-color: #fbf6ee;
+  color: var(--ink);
+}
+
+.events-page .inner-hero-bg-photo.events-hero-photo {
+  left: auto;
+  right: 0;
+  width: 58%;
+  background-position: center 25%;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.85) 28%, #000 52%);
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.85) 28%, #000 52%);
+}
+
+/* ==========================================================================
+   1. OVERVIEW: BRINGING PEOPLE TOGETHER (Soft Cream #fbf6ee)
+   ========================================================================== */
+.events-overview-section {
+  background-color: #fbf6ee;
+  padding: 80px 0 88px;
+}
+
+.events-overview-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.events-overview-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.events-showcase-card {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  padding: 12px;
+}
+
+.events-showcase-main {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(68, 22, 16, 0.12);
+  border: 4px solid #fdfaf4;
+  background: #23110e;
+}
+
+.events-showcase-main img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: center 35%;
+  display: block;
+}
+
+.events-showcase-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(35, 17, 14, 0.9) 0%, transparent 100%);
+  color: #fff;
+  padding: 24px 18px 12px;
+  font-family: var(--font-label);
+  font-size: 0.74rem;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.events-showcase-stat-badge {
+  position: absolute;
+  bottom: -16px;
+  right: -10px;
+  background: #7c0f10;
+  color: #fff;
+  border: 3px solid #fdfaf4;
+  border-radius: 18px;
+  padding: 12px 20px;
+  box-shadow: 0 10px 25px rgba(68, 22, 16, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.events-showcase-stat-badge strong {
+  font-family: var(--font-title);
+  font-size: 1.6rem;
+  line-height: 1;
+  color: #f0c98a;
+}
+
+.events-showcase-stat-badge span {
+  font-family: var(--font-label);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 4px;
+}
+
+/* ==========================================================================
+   2. CINEMA & DOCUMENTARY THEATER (Warm Ivory #fdfaf4)
+   ========================================================================== */
+.events-cinema-section {
+  background-color: #fdfaf4;
+  padding: 76px 0 88px;
+  border-top: 1px solid rgba(184, 128, 47, 0.18);
+}
+
+.events-cinema-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Multi-Video Selector Tabs */
+.video-selector-reel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1080px;
+  margin: 36px 0 28px;
+}
+
+.video-selector-card {
+  background: #fbf6ee;
+  border: 1.5px solid rgba(184, 128, 47, 0.25);
+  border-radius: 18px;
+  padding: 12px;
+  display: flex;
+  gap: 14px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(68, 22, 16, 0.03);
+}
+
+.video-selector-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(184, 128, 47, 0.55);
+  box-shadow: 0 8px 20px rgba(68, 22, 16, 0.08);
+}
+
+.video-selector-card.is-active {
+  background: #fff;
+  border-color: #7c0f10;
+  box-shadow: 0 10px 24px rgba(124, 15, 16, 0.14);
+}
+
+.video-selector-thumb-wrap {
+  position: relative;
+  width: 104px;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #23110e;
+}
+
+.video-selector-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.video-selector-card:hover .video-selector-thumb {
+  transform: scale(1.05);
+}
+
+.video-duration-pill {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  background: rgba(0, 0, 0, 0.82);
+  color: #fff;
+  font-family: var(--font-label);
+  font-size: 0.58rem;
+  font-weight: 700;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+.video-playing-indicator {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background: rgba(124, 15, 16, 0.92);
+  color: #fff;
+  font-family: var(--font-label);
+  font-size: 0.52rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+@keyframes pulseDot {
+  0% { transform: scale(0.9); opacity: 0.7; }
+  50% { transform: scale(1.25); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.7; }
+}
+
+.playing-dot {
+  width: 5px;
+  height: 5px;
+  background: #f0c98a;
+  border-radius: 50%;
+  animation: pulseDot 1.4s infinite;
+}
+
+.video-play-mini-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 26px;
+  height: 26px;
+  background: rgba(124, 15, 16, 0.85);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  padding-left: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.video-selector-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+  min-width: 0;
+}
+
+.video-selector-badge {
+  font-family: var(--font-label);
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #b8802f;
+}
+
+.video-selector-title {
+  font-family: var(--font-title);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #441610;
+  margin: 0;
+  line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.video-selector-cat {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  color: #776660;
+}
+
+/* Active Theater Meta Bar */
+.theater-meta-bar {
+  width: 100%;
+  max-width: 1080px;
+  margin-top: 24px;
+  background: #fff;
+  border: 1px solid rgba(184, 128, 47, 0.25);
+  border-radius: 18px;
+  padding: 22px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+  box-shadow: 0 6px 18px rgba(68, 22, 16, 0.04);
+}
+
+.theater-meta-tag {
+  font-family: var(--font-label);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #b8802f;
+}
+
+.theater-meta-title {
+  font-family: var(--font-title);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #7c0f10;
+  margin: 4px 0 6px;
+  line-height: 1.3;
+}
+
+.theater-meta-desc {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #554440;
+  margin: 0;
+}
+
+.theater-yt-btn {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   3. MOMENTS THAT MAKE A DIFFERENCE (Warm Sand #f3e8d6)
+   ========================================================================== */
+.events-moments-section {
+  background-color: #f3e8d6;
+  padding: 84px 0 92px;
+  border-top: 1px solid rgba(184, 128, 47, 0.2);
+}
+
+.events-moments-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: 48px;
+}
+
+.events-moment-card {
+  background: #fdfaf4;
+  border: 1.5px solid rgba(184, 128, 47, 0.25);
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(68, 22, 16, 0.06);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.events-moment-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 36px rgba(68, 22, 16, 0.12);
+}
+
+.events-moment-photo {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  background: #eadcc7;
+}
+
+.events-moment-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.events-moment-card:hover .events-moment-photo img {
+  transform: scale(1.04);
+}
+
+.events-moment-photo-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(124, 15, 16, 0.92);
+  color: #fff;
+  font-family: var(--font-label);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 11px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(240, 201, 138, 0.35);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.events-moment-body {
+  padding: 24px 22px 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.events-moment-title {
+  font-family: var(--font-title);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #7c0f10;
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+
+.events-moment-summary {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: #441610;
+  font-weight: 600;
+  margin: 0 0 16px;
+}
+
+/* ==========================================================================
+   4. UPCOMING EVENTS & COMMUNITY DRIVES (Warm Ivory #fdfaf4)
+   ========================================================================== */
+.events-upcoming-section {
+  background-color: #fdfaf4;
+  padding: 84px 0 92px;
+  border-top: 1px solid rgba(184, 128, 47, 0.18);
+}
+
+.events-upcoming-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.event-card {
+  background: #fff;
+  border: 1.5px solid rgba(184, 128, 47, 0.22);
+  border-radius: 20px;
+  padding: 28px 32px;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 32px;
+  align-items: center;
+  box-shadow: 0 8px 24px rgba(68, 22, 16, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(184, 128, 47, 0.5);
+  box-shadow: 0 16px 36px rgba(68, 22, 16, 0.1);
+}
+
+.event-card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.event-date-badge {
+  width: 100%;
+  max-width: 110px;
+  background: #fbf6ee;
+  border: 2px solid rgba(184, 128, 47, 0.35);
+  border-radius: 16px;
+  padding: 10px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(68, 22, 16, 0.06);
+}
+
+.event-date-month {
+  font-family: var(--font-label);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #b8802f;
+  text-transform: uppercase;
+}
+
+.event-date-day {
+  font-family: var(--font-title);
+  font-size: 1.9rem;
+  line-height: 1.1;
+  color: #7c0f10;
+  font-weight: 700;
+}
+
+.event-date-year {
+  font-family: var(--font-label);
+  font-size: 0.68rem;
+  color: #776660;
+  font-weight: 600;
+}
+
+.event-tag-pill {
+  font-family: var(--font-label);
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #7c0f10;
+  background: rgba(124, 15, 16, 0.08);
+  padding: 4px 8px;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+
+.event-card-main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.event-meta-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.event-category-label {
+  font-family: var(--font-label);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8b6534;
+}
+
+.event-card-title {
+  font-family: var(--font-title);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #441610;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.event-meta-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 2px;
+}
+
+.event-meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: #665550;
+}
+
+.event-meta-icon {
+  width: 15px;
+  height: 15px;
+  color: #b8802f;
+  flex-shrink: 0;
+}
+
+.event-card-desc {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #554440;
+  margin: 4px 0 8px;
+}
+
+.event-card-action {
+  margin-top: 4px;
+}
+
+/* ==========================================================================
+   5. MEMORIES THAT INSPIRE US: PHOTO GALLERY (Soft Cream #fbf6ee)
+   ========================================================================== */
+.events-gallery-section {
+  background-color: #fbf6ee;
+  padding: 88px 0 96px;
+  border-top: 1px solid rgba(184, 128, 47, 0.18);
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   6. SPONSOR & CTA (Warm Ivory #fdfaf4)
+   ========================================================================== */
+.events-sponsor-section {
+  background-color: #fdfaf4;
+  padding: 84px 0 96px;
+  border-top: 1px solid rgba(184, 128, 47, 0.2);
+}
+
+.edu-closing-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.btn-action-white-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-label);
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  background: transparent;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.btn-action-white-ghost:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: #ffffff;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .events-overview-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .events-moments-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .video-selector-reel {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .theater-meta-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .events-page .inner-hero-bg-photo.events-hero-photo {
+    width: 100%;
+    opacity: 0.35;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+  }
+
+  .events-overview-section,
+  .events-cinema-section,
+  .events-moments-section,
+  .events-upcoming-section,
+  .events-gallery-section,
+  .events-sponsor-section {
+    padding: 60px 0;
+  }
+
+  .events-moments-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .event-card {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 22px 20px;
+  }
+
+  .event-card-left {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .event-date-badge {
+    max-width: 85px;
+    padding: 6px;
+  }
+
+  .event-date-day {
+    font-size: 1.5rem;
+  }
+
+  .events-showcase-stat-badge {
+    bottom: -10px;
+    right: 10px;
+    padding: 8px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-meta-details {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .edu-closing-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .edu-closing-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
